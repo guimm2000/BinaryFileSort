@@ -9,10 +9,10 @@ int intercalacaoOtima(int total_particoes, int F, int registros_totais);
 
 void printReservatorio(FILE *r);
 
-int main(void) {
+int main(int argc, char *argv[]) {
 	int total_particoes = 0, total_registros = 0;
-	//total_particoes = selecaoComSubstituicao("int.bin", 10, &total_registros);
-	total_particoes = selecaoNatural("int.bin", 10, 10, &total_registros);
+	//total_particoes = selecaoComSubstituicao(argv[1], 10, &total_registros);
+	total_particoes = selecaoNatural(argv[1], 10, 10, &total_registros);
 
 	printf("Total de particoes == %d\n", total_particoes);
 
